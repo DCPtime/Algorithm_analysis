@@ -22,5 +22,6 @@ public:
 	}
 	int get_columns(); // Вернуть количество столбцов
 	int get_rows(); // Вернуть количество строк
+	void reset_matrix(T value); // Заполнить матрицу значением value
 };
 

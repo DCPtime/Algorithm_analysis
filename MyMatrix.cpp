@@ -70,4 +70,13 @@ int MyMatrix<T>::get_rows()
 	return rows;
 }
 
+// Заполнить матрицу значением value
+template <typename T>
+void MyMatrix<T>::reset_matrix(T value)
+{
+	for (int i = 0; i < rows; i++)
+		for (int j = 0; j < columns; j++)
+			ptr_array[i][j] = value;
+}
+
 
