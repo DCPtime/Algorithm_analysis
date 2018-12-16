@@ -262,13 +262,15 @@ void ACO::printGRAPH() {
 	cout << endl;
 	cout << "Number of connections: " << count << endl << endl;
 }
-void ACO::printRESULTS() {
+void ACO::printRESULTS()
+{
 	BESTLENGTH += distance(BESTROUTE[NUMBEROFCITIES - 1], INITIALCITY);
 	//cout << " BEST ROUTE:" << endl;
-	for (int i = 0; i < NUMBEROFCITIES; i++) {
+	/*for (int i = 0; i < NUMBEROFCITIES; i++)
+	{
 		cout << BESTROUTE[i] << " ";
-	}
-	cout << endl << "length: " << BESTLENGTH << endl;
+	}*/
+	cout << BESTLENGTH << endl;
 
 	//cout << endl << " IDEAL ROUTE:" << endl;
 	//cout << "0 7 6 2 4 5 1 3" << endl;
@@ -298,43 +300,34 @@ void ACO::optimize(int ITERATIONS)
 {
 	for (int iterations = 1; iterations <= ITERATIONS; iterations++) 
 	{
-		//cout << flush;
-		//cout << "ITERATION " << iterations << " HAS STARTED!" << endl << endl;
 
 		for (int k = 0; k < NUMBEROFANTS; k++) 
 		{
-			//cout << " : ant " << k << " has been released!" << endl;
+			
 			while (0 != valid(k, iterations))
 			{
-				//cout << "  :: releasing ant " << k << " again!" << endl;
 				for (int i = 0; i < NUMBEROFCITIES; i++)
 				{
 					ROUTES[k][i] = -1;
 				}
 				route(k);
 			}
-
-			for (int i = 0; i < NUMBEROFCITIES; i++) {
-				//cout << ROUTES[k][i] << " ";
-			}
-			//cout << endl;
-
-		//	cout << "  :: route done" << endl;
+	
 			double rlength = length(k);
 
-			if (rlength < BESTLENGTH) {
+			if (rlength < BESTLENGTH) 
+			{
 				BESTLENGTH = rlength;
-				for (int i = 0; i < NUMBEROFCITIES; i++) {
+				for (int i = 0; i < NUMBEROFCITIES; i++)
+				{
 					BESTROUTE[i] = ROUTES[k][i];
 				}
 			}
 			//cout << " : ant " << k << " has ended!" << endl;
 		}
 
-		//cout << endl << "updating PHEROMONES . . .";
+	
 		updatePHEROMONES();
-	//	cout << " done!" << endl << endl;
-		//printPHEROMONES();
 
 		for (int i = 0; i < NUMBEROFANTS; i++) {
 			for (int j = 0; j < NUMBEROFCITIES; j++) {
