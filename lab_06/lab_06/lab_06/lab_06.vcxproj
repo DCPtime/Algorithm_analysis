@@ -151,10 +151,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="order_log.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="queue_functions.h" />
     <ClInclude Include="queue_multy_threads.h" />
     <ClInclude Include="strings_fucntions.h" />
+    <ClInclude Include="With_log.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="lab_06.cpp" />

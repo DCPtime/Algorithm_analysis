@@ -35,6 +35,7 @@ void fill_vector(vector<string>& obj, int amount_word, int length_word)
 		var = "";
 		for (int j = 0; j < length_word; j++)
 			var = var + alphabet[rand() % alphabet_len];
+		var = var + std::to_string(i);
 		obj.push_back(var);
 	}
 }

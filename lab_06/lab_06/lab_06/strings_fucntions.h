@@ -17,13 +17,15 @@ unsigned __int64 rdtsc()
 
 void up_string(string &var)
 {
-	for (int i = 0; i < var.length(); i++)
+	for (int i = 0; i < var.length()-1; i++)
 		var[i] = var[i] - 32;
+	Sleep(1000);
 }
 
 void exchange_symbol(string &string_var, string symbol_a, string symbol_b)
 {
-	for (int i = 0; i < string_var.length(); i++)
+	for (int i = 0; i < string_var.length()-1; i++)
 		if (string_var[i] == symbol_a[0])
 			string_var[i] = symbol_b[0];
+	Sleep(1000);
 }

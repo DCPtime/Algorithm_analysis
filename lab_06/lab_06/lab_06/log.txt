@@ -1,0 +1,40 @@
+0  was pushed in queue_0
+1  was pushed in queue_0
+2  was pushed in queue_0
+0  was thrown out of the queue_0 and pushed to queue_1
+3  was pushed in queue_0
+4  was pushed in queue_0
+1  was thrown out of the queue_0 and pushed to queue_1
+0  was thrown out of the queue_1 and pushed to queue_2
+5  was pushed in queue_0
+6  was pushed in queue_0
+2  was thrown out of the queue_0 and pushed to queue_1
+0  was thrown out of the queue_2 and pushed to vector
+1  was thrown out of the queue_1 and pushed to queue_2
+7  was pushed in queue_0
+8  was pushed in queue_0
+3  was thrown out of the queue_0 and pushed to queue_1
+1  was thrown out of the queue_2 and pushed to vector
+2  was thrown out of the queue_1 and pushed to queue_2
+9  was pushed in queue_0
+4  was thrown out of the queue_0 and pushed to queue_1
+2  was thrown out of the queue_2 and pushed to vector
+3  was thrown out of the queue_1 and pushed to queue_2
+5  was thrown out of the queue_0 and pushed to queue_1
+3  was thrown out of the queue_2 and pushed to vector
+4  was thrown out of the queue_1 and pushed to queue_2
+6  was thrown out of the queue_0 and pushed to queue_1
+4  was thrown out of the queue_2 and pushed to vector
+5  was thrown out of the queue_1 and pushed to queue_2
+7  was thrown out of the queue_0 and pushed to queue_1
+5  was thrown out of the queue_2 and pushed to vector
+6  was thrown out of the queue_1 and pushed to queue_2
+8  was thrown out of the queue_0 and pushed to queue_1
+6  was thrown out of the queue_2 and pushed to vector
+7  was thrown out of the queue_1 and pushed to queue_2
+9  was thrown out of the queue_0 and pushed to queue_1
+7  was thrown out of the queue_2 and pushed to vector
+8  was thrown out of the queue_1 and pushed to queue_2
+8  was thrown out of the queue_2 and pushed to vector
+9  was thrown out of the queue_1 and pushed to queue_2
+9  was thrown out of the queue_2 and pushed to vector
